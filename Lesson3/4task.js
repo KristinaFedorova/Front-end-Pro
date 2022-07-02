@@ -3,48 +3,50 @@
 //     Наприклад
 // shift (array) - видаляє перший елемент переданого масиву array.
 // push(array, value) - додає у кінець масиву array елемент value
-// Метод unshift()добавляет новые элементы в начало массива.
+// unshift()добавляет новые элементы в начало массива.
 // pop() удаляет последний элемент из массива и возвращает его значение.
 // Використовувати методи масиву під час вирішення завдання заборонено!
 
 function shift(arr) {
     arr = []
-    let a = 7
+    let a = prompt('Введите количество элементов в массиве: ')
     a = Number(a)
-    let i = 0
-    i = Number(i)
-    for (i; i < a; i++) {
-        if (i === 0) {
-            arr[1] = arr[i]
-
-        } else {
-            arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
-        }
-
+    for (let i = 0; i < a; i++) {
+        arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
     }
-    console.log(arr.length)
-    console.log(arr[0])
-    console.log(arr)
+    let value = arr[0]
+    alert(arr)
+    i = 0
+    while (i < arr.length) {
+        if (i > 0 && i < arr.length) {
+            arr[i - 1] = arr[i]
+        }
+        i++
+    }
+    arr.length = arr.length - 1
+    alert(value)
+    alert(arr)
+
 
 }
 
 function pop(arr) {
     arr = []
     let a = 6
-    for (let i = 0; i <= a; i++) {
-        arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
-        console.log(arr)
-        if (i === a) {
-            arr[i] = arr[a]
-            console.log(arr[a])
-        }
-        arr.length = 6
-    }
-    console.log(arr)
-
     // for (let i = 0; i <= a; i++) {
     //     arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
-    //     console.log(arr)
+    //     alert(arr)
+    //     if (i === a) {
+    //         arr[i] = arr[a]
+    //         console.log(arr[a])
+    //     }
+    //     arr.length = 6
+    // }
+    // alert(arr)
+    //
+    // for (let i = 0; i <= a; i++) {
+    //     arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
+    //     alert(arr)
     //     if (i === a) {
     //         arr[i++] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
     //         arr.length = a
@@ -52,34 +54,42 @@ function pop(arr) {
     //
     //
     // }
-    // console.log(arr)
+    // alert(arr)
+
 }
 
 function push(arr) {
     arr = []
-    let a = 6
-    let i = 0
+    let value = prompt('value: ')
+    let a = prompt('Введите количество элементов в массиве: ')
+    a = Number(a)
+    for (let i = 0; i <= a - 1; i++) {
+        arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
+        if (i === a - 1) {
+            arr[i + 1] = value
+        }
+    }
+
+    alert(arr)
+}
+
+function unshift(arr) {
+    arr = []
+    let value = prompt('value: ')
+    let a = prompt('Введите количество элементов в массиве: ')
+    a = Number(a)
     for (let i = 0; i <= a; i++) {
         arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
-        console.log(arr)
-
-
-
+        if (i === 0) {
+            arr[i] = value
+        }
     }
-    i++
-    if (i === a||i>=a) {
 
-        arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
-        a++
-    }
-    console.log(arr)
+    alert(arr)
 }
 
 
-let arr = []
-for (let i = 0; i < 7; i++) {
-    arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
-}
 // pop()
 // shift()
-push()
+// push()
+// unshift()
