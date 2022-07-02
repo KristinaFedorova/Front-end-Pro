@@ -32,17 +32,17 @@ function shift(arr) {
 
 function pop(arr) {
     arr = []
-    let a = 6
-    // for (let i = 0; i <= a; i++) {
-    //     arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
-    //     alert(arr)
-    //     if (i === a) {
-    //         arr[i] = arr[a]
-    //         console.log(arr[a])
-    //     }
-    //     arr.length = 6
-    // }
-    // alert(arr)
+    let a = prompt('Введите количество элементов в массиве: ')
+    for (let i = 0; i <= a; i++) {
+        arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
+        alert(arr)
+        if (i === a) {
+            arr[i] = arr[a]
+            console.log(arr[a])
+        }
+        arr.length = 6
+    }
+    alert(arr)
     //
     // for (let i = 0; i <= a; i++) {
     //     arr[i] = Math.floor((Math.random() * 10) + (Math.random() * (-10)))
@@ -60,7 +60,7 @@ function pop(arr) {
 
 function push(arr) {
     arr = []
-    let value = prompt('value: ')
+    let value = prompt('Введите значение, которое нужно добавить в массив: ')
     let a = prompt('Введите количество элементов в массиве: ')
     a = Number(a)
     for (let i = 0; i <= a - 1; i++) {
@@ -75,7 +75,7 @@ function push(arr) {
 
 function unshift(arr) {
     arr = []
-    let value = prompt('value: ')
+    let value = prompt('Введите значение, которое нужно добавить в массив: ')
     let a = prompt('Введите количество элементов в массиве: ')
     a = Number(a)
     for (let i = 0; i <= a; i++) {
