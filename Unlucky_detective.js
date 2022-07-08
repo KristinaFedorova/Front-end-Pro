@@ -1,5 +1,4 @@
 function getCodes(code) {
-    code = prompt()
     let array = code.split('')
     console.log(array)
     let arr = []
@@ -99,4 +98,4 @@ function fourSymbols(code) {
         return (numbers.get(code))
     }
 
-    getCodes(18)
+    getCodes('6239')
