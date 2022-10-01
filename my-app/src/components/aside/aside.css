@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #2d2d2d;
+}
+
+.sideBar {
+    height: 150px;
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 200px;
+    background-color: #c5c5c5;
+}
+
+.aside {
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.sideBarList {
+    height: auto;
+    padding: 0;
+    width: 100%;
+}
+.aside:hover{
+    background-color: #c0c0c0;
+
+}
+.aside:visited{
+    background-color: rgba(217, 255, 250, 0.81);
+
+}
