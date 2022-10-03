@@ -24,5 +24,4 @@ export const MenuPoints=[
         url:'#',
         className:'nav-links'
     }
-
 ]

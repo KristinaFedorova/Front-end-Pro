@@ -15,6 +15,4 @@ export const AsideData = [
         url: '#',
         className: 'nav-links'
     }
-
-
 ]

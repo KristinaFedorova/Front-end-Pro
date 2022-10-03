@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.mainPage{
+
+.mainPage {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -12,26 +13,28 @@
     height: 150px;
 
 }
-.buttons{
+
+.buttons {
     display: flex;
     flex-direction: row;
     padding: 10px;
-
 }
-.buttons .button a{
+
+.buttons .button a {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-background-color: #dadada;
-    color:#2d2d2d;
+    background-color: #dadada;
+    color: #2d2d2d;
     text-decoration: none;
 }
-.button a:hover{
+
+.button a:hover {
     background-color: #c0c0c0;
 }
 
-.pic{
+.pic {
     display: block;
     height: 100%;
     width: 100%;

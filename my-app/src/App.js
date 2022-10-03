@@ -13,7 +13,6 @@ function App() {
                 <MainPage/>
             </div>
         </div>
-
     );
 }
 
